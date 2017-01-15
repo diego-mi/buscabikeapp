@@ -1,0 +1,60 @@
+<section class="login-screen">
+    <article>
+        <form class="base-form" action="#" onsubmit="return false;">
+
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="NomeEvento" ng-model="criarEvento.evento.nome" required>
+                <label class="mdl-textfield__label" for="NomeEvento">Nome do Evento</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="DataHora" ng-model="criarEvento.evento.data" required>
+                <label class="mdl-textfield__label" for="DataHora">Data/Hora</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="Extensao" ng-model="criarEvento.evento.extensao" required>
+                <label class="mdl-textfield__label" for="Extensao">Extensão</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="CarroApoio" ng-model="criarEvento.evento.carroapoio" required>
+                <label class="mdl-textfield__label" for="CarroApoio">Carro de Apoio</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" required>
+                <select ng-model="criarEvento.evento.repeticao">
+                    <option value="1">Uma vez</option>
+                    <option value="2">Semanalmente</option>
+                    <option value="3">Mensalmente</option>
+                    <option value="4">Anualmente</option>
+                </select>
+                <label class="mdl-textfield__label" for="Frequencia">Frequência</label>
+            </div>
+
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <label class="mdl-textfield__label" for="Rota">Rota</label>
+            </div>
+
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <figure class="logo">
+                    <img src="images/rota.png" alt="">
+                </figure>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="Origem" ng-model="criarEvento.evento.origem" required>
+                    <label class="mdl-textfield__label" for="Origem">Origem</label>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="Destino" ng-model="criarEvento.evento.destino" required>
+                    <label class="mdl-textfield__label" for="Destino">Destino</label>
+                </div>
+            </div>
+
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" ng-click="criarEvento.submit()" ng-disabled="form.invalid">
+                Salvar
+            </button>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='event.html';">
+                Limpar
+            </button>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='events.html';">
+                Voltar
+            </button>
+        </form>
+    </article>
+</section>

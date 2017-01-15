@@ -1,0 +1,28 @@
+<div class="login-screen">
+
+    <figure class="logo">
+        <img src="images/logo.png" alt="">
+    </figure>
+
+    <article>
+        <form class="base-form" action="#" onsubmit="return false;">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="login" required ng-model="usuario.email">
+                <label class="mdl-textfield__label" for="login">Login</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="senha" required ng-model="usuario.password">
+                <label class="mdl-textfield__label" for="senha">Senha</label>
+            </div>
+
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" ng-click="login.create()">
+                Registrar
+            </button>
+
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" onclick="location.href='login';">
+                Já tenho uma conta
+            </button>
+        </form>
+    </article>
+
+</div>
